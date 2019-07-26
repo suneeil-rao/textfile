@@ -1,0 +1,20 @@
+peline{
+    agent any
+    options{
+                timestamps()
+            }
+    stages{
+        stage("Build"){
+            steps{
+                echo "### Hello world in Build stage"
+                echo "### Hello world in Build stage again"
+            }
+        }
+        stage("test"){
+            steps{
+                echo "+++ Hello world in test stage"
+                echo "+++ Hello world in test stage again"
+            }
+        }
+    }
+}6
